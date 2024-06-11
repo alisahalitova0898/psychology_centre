@@ -1,9 +1,0 @@
-build-job1:
-  stage: build
-  script: 
-    - docker build -t psy C:\ppp
-build-job2:
-  stage: build
-  script: 
-    - docker run -d -p 8000:8000 psy
-    

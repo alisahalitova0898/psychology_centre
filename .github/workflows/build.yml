@@ -1,0 +1,12 @@
+name: build
+on: push
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: dock build
+        shell: cmd
+        run: docker build -t psy C:\ppp
+      - name: start
+        shell: cmd
+        run: docker run -d -p 8000:8000 psy
