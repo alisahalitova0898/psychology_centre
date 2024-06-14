@@ -47,7 +47,7 @@ async def appointment(psycholog, patient, date):
 async def psycholog_name(name):
     str = 'select find_psycholog_by_name(\'' + name + '\')'
     cursor.execute(str)
-    a = 6
+    a = 0
     records = cursor.fetchone()
     return records
 
